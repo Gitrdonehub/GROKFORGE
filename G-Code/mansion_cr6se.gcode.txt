@@ -1,0 +1,5 @@
+;GROKFORGE - Dean's Mansion
+M104 S200
+M140 S60
+G28
+M84
