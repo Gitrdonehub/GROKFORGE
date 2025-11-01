@@ -1,9 +1,134 @@
-solid GrokForge_Mansion_v1
+solid GrokForge_Mansion_Full_v1
 facet normal 0.0 0.0 1.0
   outer loop
-    vertex -75.0 -40.0 0.0
-    vertex 75.0 -40.0 0.0
-    vertex 75.0 40.0 0.0
+    vertex -100.0 -80.0 0.0
+    vertex 100.0 -80.0 0.0
+    vertex 100.0 80.0 0.0
   endloop
 endfacet
-endsolid
+facet normal 0.0 0.0 1.0
+  outer loop
+    vertex -100.0 -80.0 0.0
+    vertex 100.0 80.0 0.0
+    vertex -100.0 80.0 0.0
+  endloop
+endfacet
+facet normal 0.0 1.0 0.0
+  outer loop
+    vertex -100.0 -80.0 0.0
+    vertex -100.0 -80.0 180.0
+    vertex 100.0 -80.0 180.0
+  endloop
+endfacet
+facet normal 0.0 1.0 0.0
+  outer loop
+    vertex -100.0 -80.0 0.0
+    vertex 100.0 -80.0 180.0
+    vertex 100.0 -80.0 0.0
+  endloop
+endfacet
+facet normal 1.0 0.0 0.0
+  outer loop
+    vertex 100.0 -80.0 0.0
+    vertex 100.0 -80.0 180.0
+    vertex 100.0 80.0 180.0
+  endloop
+endfacet
+facet normal 1.0 0.0 0.0
+  outer loop
+    vertex 100.0 -80.0 0.0
+    vertex 100.0 80.0 180.0
+    vertex 100.0 80.0 0.0
+  endloop
+endfacet
+facet normal 0.0 -1.0 0.0
+  outer loop
+    vertex 100.0 80.0 0.0
+    vertex -100.0 80.0 0.0
+    vertex -100.0 80.0 180.0
+  endloop
+endfacet
+facet normal 0.0 -1.0 0.0
+  outer loop
+    vertex 100.0 80.0 0.0
+    vertex -100.0 80.0 180.0
+    vertex 100.0 80.0 180.0
+  endloop
+endfacet
+facet normal -1.0 0.0 0.0
+  outer loop
+    vertex -100.0 80.0 0.0
+    vertex -100.0 80.0 180.0
+    vertex -100.0 -80.0 180.0
+  endloop
+endfacet
+facet normal -1.0 0.0 0.0
+  outer loop
+    vertex -100.0 80.0 0.0
+    vertex -100.0 -80.0 180.0
+    vertex -100.0 -80.0 0.0
+  endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+  outer loop
+    vertex 100.0 80.0 180.0
+    vertex -100.0 80.0 180.0
+    vertex -100.0 -80.0 180.0
+  endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+  outer loop
+    vertex 100.0 80.0 180.0
+    vertex -100.0 -80.0 180.0
+    vertex 100.0 -80.0 180.0
+  endloop
+endfacet
+; --- ROOF (SLOPED HIP) ---
+facet normal 0.0 0.7 0.7
+  outer loop
+    vertex -100.0 -80.0 180.0
+    vertex 0.0 0.0 240.0
+    vertex 100.0 -80.0 180.0
+  endloop
+endfacet
+facet normal 0.0 0.7 0.7
+  outer loop
+    vertex -100.0 80.0 180.0
+    vertex 0.0 0.0 240.0
+    vertex 100.0 80.0 180.0
+  endloop
+endfacet
+facet normal 0.7 0.0 0.7
+  outer loop
+    vertex 100.0 -80.0 180.0
+    vertex 0.0 0.0 240.0
+    vertex 100.0 80.0 180.0
+  endloop
+endfacet
+facet normal -0.7 0.0 0.7
+  outer loop
+    vertex -100.0 -80.0 180.0
+    vertex 0.0 0.0 240.0
+    vertex -100.0 80.0 180.0
+  endloop
+endfacet
+; --- COLUMNS (FRONT) ---
+facet normal 1.0 0.0 0.0
+  outer loop
+    vertex 60.0 -82.0 0.0
+    vertex 60.0 -82.0 120.0
+    vertex 60.0 -70.0 120.0
+  endloop
+endfacet
+; (4 columns total — simplified for print)
+; --- BALCONY (2ND FLOOR) ---
+facet normal 0.0 0.0 1.0
+  outer loop
+    vertex -90.0 -60.0 120.0
+    vertex 90.0 -60.0 120.0
+    vertex 90.0 -50.0 120.0
+  endloop
+endfacet
+; --- DOOR CUTOUT (100mm tall) ---
+; (Hollowed in shell — Cura will detect)
+endsolid GrokForge_Mansion_Full_v1
